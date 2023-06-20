@@ -35,7 +35,7 @@ jobs:
         python3 -u src/main.py &
         PID=$!
         sleep 180
-        kill $PID
+        kill -INT $PID
 
     - name: Upload output.txt as artifact
       uses: actions/upload-artifact@v2
